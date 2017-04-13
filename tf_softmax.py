@@ -1,4 +1,3 @@
-# Solution is available in the other "solution.py" tab
 import tensorflow as tf
 
 
