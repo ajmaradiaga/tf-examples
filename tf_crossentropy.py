@@ -7,8 +7,8 @@ softmax = tf.placeholder(tf.float32)
 one_hot = tf.placeholder(tf.float32)
 
 # Print cross entropy from session
-# y*ln(yhat)
-ce = tf.reduce_sum(tf.multiply(one_hot, tf.log(softmax)))
+# sum of y*ln(yhat)
+ce = -tf.reduce_sum(tf.multiply(one_hot, tf.log(softmax)))
 
 output = None
 
